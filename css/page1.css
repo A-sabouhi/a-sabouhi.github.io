@@ -72,32 +72,9 @@ div {
     text-shadow: 2px 2px 5px white, -2px -2px 5px white;
 }
 
-/* .btn1 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    background: linear-gradient(45deg, blue, pink);
-    transition: all 2s linear;
-}
 
-@keyframes BTN1 {
-    from {
-        background-color: blue;
-    }
-
-    to {
-        background-color: pink;
-    }
-}
-
-.btn1:hover {
-    background: linear-gradient(45deg, blue, red);
-    box-shadow: 0 12px 16px 0 rgba(207, 40, 40, 0.8);
-    transition: all 2s linear;
-    /* animation: BTN1 2s linear 0; 
-} */
 .btn1 {
-    width: 100px;
+    width: 200px;
     height: 100px;
     border-radius: 20px;
     background: linear-gradient(45deg, blue, pink);
