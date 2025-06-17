@@ -1,0 +1,88 @@
+.bg1 {
+    background-image: url(../image/mainBg1.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: rgb(253, 253, 253);
+}
+
+.margin2left {
+    margin-top: 10px;
+}
+
+.navBarHome ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: start;
+    margin-left: 30px;
+}
+
+.navBarHome ul li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 15px;
+    border-right: 3px solid rgb(255, 63, 95);
+}
+
+.borderNone {
+    border: 0 !important;
+}
+
+.navBarHome ul li a {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* 0000000000000000000000000000000000 text and paragraphs */
+
+.aboutUsText {
+    /* height: 100vh; */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.608);
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-justify: newspaper;
+
+}
+
+.aboutUsText h3 {
+    width: 100%;
+    line-height: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), -1px -1px 5px black;
+    direction: rtl;
+    text-align: center;
+}
+
+.aboutUsText p {
+    width: 65%;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(35, 35, 35);
+    text-shadow: 1px 1px 5px rgb(255, 255, 255), -1px -1px 5px white;
+    direction: rtl;
+    text-align: justify;
+}
+
+.pAboutUs {
+    direction: ltr !important;
+}
+
+hr {
+    width: 70%;
+    height: 5px;
+    background-color: pink;
+    color: blue;
+}

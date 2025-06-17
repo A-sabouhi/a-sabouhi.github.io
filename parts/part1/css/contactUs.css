@@ -1,0 +1,134 @@
+.bg1 {
+    background-image: url(../image/mainBg1.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: rgb(253, 253, 253);
+}
+
+.dt1 {
+    height: 10vh;
+}
+
+.d1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-top: 10vh;
+    border-radius: 2rem;
+}
+
+.d2 {
+    height: 10vh;
+}
+
+.pContainer {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 192, 203, 0.426);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0 0 10px black;
+}
+
+.pContainer p {
+    width: 60%;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    text-align: start;
+
+}
+
+.subSize {
+    font-size: 16px !important;
+    line-height: 10px !important;
+    font-style: oblique;
+    font-weight: 400 !important;
+
+}
+
+.margin2left {
+    margin-top: 10px;
+}
+
+.navBarHome ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: start;
+    margin-left: 30px;
+}
+
+.navBarHome ul li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 15px;
+    border-right: 3px solid rgb(255, 63, 95);
+}
+
+.borderNone {
+    border: 0 !important;
+}
+
+.navBarHome ul li a {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.contactText {
+    /* height: 100vh; */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.608);
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-justify: newspaper;
+
+}
+
+.contactText h3 {
+    width: 100%;
+    line-height: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), -1px -1px 5px black;
+    direction: rtl;
+    text-align: center;
+}
+
+.contactText p {
+    width: 65%;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(35, 35, 35);
+    text-shadow: 1px 1px 5px rgb(255, 255, 255), -1px -1px 5px white;
+    direction: rtl;
+    text-align: start;
+    text-justify: auto;
+}
+
+.pContactUs {
+    direction: ltr !important;
+}
+
+hr {
+    width: 70%;
+    height: 5px;
+    background-color: pink;
+    color: blue;
+}

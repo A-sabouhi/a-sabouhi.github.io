@@ -1,22 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    offset: 0;
-    outline: 0;
-}
-body{
+/*   */
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(../images/img4.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     /* backdrop-filter: blur(5px); */
 
 }
-div{
+
+div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,10 +26,11 @@ div{
 
     border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 5;
     background-clip: content-box;
-    
-    
+
+
 }
-.heading-style{
+
+.heading-style {
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -47,7 +45,8 @@ div{
     color: transparent;
     text-shadow: none;
 }
-.p-background{
+
+.p-background {
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -57,10 +56,11 @@ div{
     width: 100%;
     text-align: center;
     z-index: -1;
-    
+
     position: absolute;
 }
-.p-style{
+
+.p-style {
     text-align: center;
     width: 80%;
     color: blue;
@@ -70,4 +70,43 @@ div{
     padding: 20px;
     margin-bottom: 50px;
     text-shadow: 2px 2px 5px white, -2px -2px 5px white;
+}
+
+/* .btn1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, blue, pink);
+    transition: all 2s linear;
+}
+
+@keyframes BTN1 {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: pink;
+    }
+}
+
+.btn1:hover {
+    background: linear-gradient(45deg, blue, red);
+    box-shadow: 0 12px 16px 0 rgba(207, 40, 40, 0.8);
+    transition: all 2s linear;
+    /* animation: BTN1 2s linear 0; 
+} */
+.btn1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, blue, pink);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s ease, box-shadow 0.5s ease;
+}
+
+.btn1:hover {
+    background-position: right;
+    box-shadow: 0 12px 16px 0 rgba(207, 40, 40, 0.8);
 }
