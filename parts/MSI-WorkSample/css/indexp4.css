@@ -1,0 +1,182 @@
+.p4 {
+    font-size: calc(10px + 0.5vw);
+    overflow: auto;
+    /* scrollbar-width: thin;
+    scrollbar-color: magenta; */
+
+}
+
+.p4textalign {
+    text-align: justify;
+}
+
+.p4mask {
+    margin-bottom: 5vh;
+    padding-bottom: 20vh;
+
+
+    background: border-box repeating-linear-gradient(45deg, gray 6%, #222222 12%, gray 18%);
+
+    /* --mask:
+    radial-gradient(41.82px at 50% calc(100% + 17.4px), #0000 calc(99% - 16px), #000 calc(101% - 16px) 99%, #0000 101%) calc(50% - 58px) calc(50% - 22.5px + .5px)/116px 45px,
+    radial-gradient(41.82px at 50% -17.4px, #0000 calc(99% - 16px), #000 calc(101% - 16px) 99%, #0000 101%) 50% calc(50% + 22.5px)/116px 45px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    */
+
+    mask:
+        radial-gradient(33px at 75% 100%, #a7a7a75c 98%, #00000072) 50% calc(100% - 33px)/132px 100% repeat-x,
+        radial-gradient(33px at 25% 50%, #000000c8 99%, #0000 101%) bottom/132px 66px repeat-x
+}
+
+.p4main {
+    color: rgb(28, 28, 28);
+    position: absolute;
+    /* z-index: 2000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p4text {
+    height: 56vh;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.513);
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin-bottom: calc(10px+10Vh);
+    padding: 20px;
+    color: #222;
+    position: relative;
+    scrollbar-width: thin;
+    scrollbar-color: magenta;
+
+    /* border:10px solid green; */
+}
+
+.p4text h2:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(51, 51, 50);
+    mask:
+        radial-gradient(40px at 40px 40px, #0000 calc(98% - 10px), #000 calc(100% - 10px) 98%, #0000) -40px -40px,
+        linear-gradient(90deg, #000 20px, #0000 0) -10px 50% /100% calc(100% - 80px + 10px) repeat-x,
+        linear-gradient(#000 20px, #0000 0) 50% -10px/calc(100% - 80px + 10px) 100% repeat-y;
+}
+
+.p4text h2,
+.p4text h5 {
+    font-family: 'Gill Sans';
+    color: #222;
+}
+
+.p4text h2 {
+    font-size: calc(1.5rem + 2vw);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* larger base + scaling */
+}
+
+.p4text h5 {
+    font-size: calc(0.9rem + 1vw);
+    /* smaller base + slower growth */
+}
+
+.p4text p {
+    padding-left: calc(0.5rem + 2vw);
+    padding-right: calc(0.5rem + 2vw);
+}
+
+.p4h2 {
+    font-size: calc(2rem + 2vw);
+    font-weight: bold;
+    background-image: url(../images/p4/textmask1.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: transparent;
+    background-clip: text;*/
+    /* background-size: 200%;  */
+    background-position: center;
+    line-height: calc(2rem + 2vw);
+    /* text-shadow: 1px 1px 0px rgb(164, 0, 153); */
+    filter: drop-shadow(1px 1px 0px navy);
+}
+
+.p4AnimatedArrow {
+    vertical-align: middle;
+    font-weight: bold;
+    background-image: url(../images/p4/p4textbg.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px 0px navy);
+}
+
+.p4btn {
+    border: 4px double red;
+    background: rgba(231, 231, 231, 0.503);
+    /* -webkit-background-clip: border-box;
+    background-image: url(../images/p4/p4textbg.png); */
+    border-radius: 10px;
+    position: absolute;
+    top: 180px;
+    right: 40px;
+    z-index: 5;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+}
+
+.p4btn a {
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.p4btn a p{
+    font-size: calc(10px + 0.1vw);
+    line-height: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+/* scrollbar */
+.p4text {
+    scrollbar-width: 16px;
+    /* Firefox */
+    scrollbar-color: rgb(54, 22, 143) transparent;
+    /* Firefox */
+    overflow-y: scroll;
+}
+
+/* Chrome, Edge, Safari */
+.p4text::-webkit-scrollbar {
+    width: 8px;
+    /* scrollbar width */
+}
+
+.p4text::-webkit-scrollbar-thumb {
+    background-color: magenta;
+    /* thumb color */
+    border-radius: 10px;
+}
+
+.p4text::-webkit-scrollbar-track {
+    background: transparent;
+    /* track background */
+}
+
+@media (min-width: 575px) and (max-width: 768px) {
+    .p4text {
+        background: rgba(255, 255, 255, 0.84);
+        border-radius: 20px;
+        margin-top: 10vh;
+        margin-bottom: calc(10px+10Vh);
+        padding: 20px;
+        color: #222;
+        position: relative;
+        margin-left: calc(20px + 0.9vw);
+        /* border:10px solid green; */
+    }

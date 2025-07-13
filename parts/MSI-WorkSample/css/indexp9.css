@@ -1,0 +1,134 @@
+
+@media all and (max-width:991px) {
+    .p9BoxLast2 {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(30px + 6vw);
+        bottom: 0;
+        text-align: center;
+        color: rgb(30, 30, 30);
+        background-color: rgb(154, 154, 154);
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .p9scaleUp:hover>.p9imgcontainer img {
+        transform: scale(1.05);
+    }
+
+    .p9imgcontainer {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .p9imgcontainer:hover>.p9pBoxLast2 {
+        background-color: #4646469b;
+        color: white;
+    }
+
+    .p9scaleup {
+        overflow: hidden;
+        transition: all 300ms ease 0s;
+    }
+
+     .p9pBoxLast2 {
+        position: absolute;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 35%;
+        bottom: 0;
+        text-align: start;
+        color: rgb(30, 30, 30);
+        background-color: rgba(213, 213, 213, 0.695);
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .p9pBoxLast2 h5 {
+        font-size: calc(5px + 2vw);
+        text-align: center;
+        line-height: calc(2px + 2vw);
+        font-weight: bolder;
+        margin-top: calc(5px + 0.1vw);
+        margin-bottom: calc(2px + 1vw);
+        text-shadow: 2px 2px 5px white;
+    }
+
+    .p9pBoxLast2 p {
+        font-size: calc(6px + 1.2vw);
+        text-align: center;
+        line-height: 8px;
+        /* margin-top: 5px; */
+        margin-bottom: 4px;
+
+    }
+
+    .part9mb {
+        margin-bottom: 10px;
+    }
+
+    .part9 a {
+        text-decoration: none;
+    }
+}
+
+
+@media all and (min-width:992px) {
+    .p9pBoxLast2 {
+        position: absolute;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 35%;
+        bottom: 0;
+        text-align: start;
+        color: rgb(30, 30, 30);
+        background-color: rgba(213, 213, 213, 0.695);
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .p9scaleUp:hover>.p9imgcontainer img {
+        transform: scale(1.05);
+    }
+
+    .p9imgcontainer {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .p9imgcontainer:hover>.p9pBoxLast2 {
+        background-color: #22222282;
+        color: white;
+    }
+
+    .p9scaleup {
+        overflow: hidden;
+        transition: all 300ms ease 0s;
+        mix-blend-mode: overlay;
+        background-blend-mode: darken;
+    }
+
+    .p9pBoxLast2 h5,
+    .p9pBoxLast2 p {
+        font-size: calc(10px + 0.5vw);
+        text-align: start;
+        line-height: 10px;
+        
+    }
+
+
+}

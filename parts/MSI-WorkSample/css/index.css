@@ -1,0 +1,40 @@
+
+@import "indexp1.css";
+@import "indexp2.css";
+@import "indexp3.css";
+@import "indexp4.css";
+@import "indexp5.css";
+@import "indexp7.css";
+@import "indexp8.css";
+@import "indexp9.css";
+@import "indexp10.css";
+@import "indexp11.css";
+@import "indexp12.css";
+@import "indexp13.css";
+
+.gapDiv{
+    height: 5vh;
+}
+.overall-BG{
+    background-image: linear-gradient(90deg, gray 20%,silver 60%,gray 80%) ;
+}
+.bgColor{background-image: linear-gradient(blue, pink, red, magenta);}
+.part3{
+    position: relative;
+    z-index: 1;
+}
+
+
+@media all and (max-width:766.5) {
+    .p3displayLgNone {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media all and (min-width:766.6) {
+    .p3displaySmNone {
+        display: none;
+        visibility: hidden;
+    }
+}

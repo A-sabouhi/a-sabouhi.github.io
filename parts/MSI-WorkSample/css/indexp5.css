@@ -1,0 +1,122 @@
+
+
+@media all and (min-width:767px) {
+
+    .part5 .row {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .part5 {
+        /* height: 80vh; */
+        width: 100%;
+        padding: 30px;
+    }
+
+    .part5 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .part5 img {
+        width: 100%;
+        transition: all 400ms ease 0s;
+    }
+
+    .p5ImgContainer {
+        overflow: hidden;
+    }
+
+    .part5 .col-4:hover img {
+        transform: scale(1.07);
+    }
+
+    .p5H5PContainer {
+        transition: all 400ms ease 0s;
+
+    }
+
+    .part5 .col-4:hover .p5H5PContainer {
+        background-color: #ececec45;
+    }
+
+    .part5 h5,
+    .part5 p {
+        text-align: center;
+    }
+
+    .part5 h5 {
+        font-weight: bold;
+        color: white;
+        text-shadow: -1px 4px 10px black;
+        padding: 10px;
+        font-size: calc(14px + 0.5vw);
+    }
+
+    .part5 p {
+        font-size: calc(12px + 0.5vw);
+    }
+}
+
+
+
+@media all and (max-width:767px) {
+    .part5Mini {
+        /* height: 80vh; */
+        width: 100%;
+    }
+
+    .part5Mini a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .part5Mini img {
+        width: 100%;
+        transition: all 400ms ease 0s;
+    }
+
+    .p5ImgContainer {
+        overflow: hidden;
+    }
+
+    .part5Mini .p5MiniZoom:hover img {
+        transform: scale(1.05);
+    }
+
+    .p5MiniZoom {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .p5H5PContainer {
+        line-height: 10px;
+        padding-bottom: 10px;
+        transition: all 400ms ease 0s;
+
+    }
+
+    .part5Mini .p5MiniZoom:hover .p5H5PContainer {
+        background-color: #ececec;
+    }
+
+    .part5Mini h5,
+    .part5Mini p {
+        text-align: center;
+    }
+
+    .part5Mini h5 {
+        font-weight: bold;
+        height: 100%;
+        line-height: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        font-size: calc(14px + 0.5vw);
+    }
+
+    .part5Mini p {
+        font-size: calc(12px + 0.5vw);
+    }
+
+}

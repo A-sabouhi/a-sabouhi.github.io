@@ -1,0 +1,273 @@
+
+.p12setting {
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid solid gray; */
+    background-image: linear-gradient(45deg, #555555 0 50%, rgba(255, 255, 255, 0)50% 100%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    cursor: pointer;
+    /* SH */
+    z-index: 1000;
+}
+
+.p12pose2 {
+    width: 41%;
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+
+.size2 {
+    width: 100%;
+    position: relative;
+}
+
+.p12settingBox h5, h6{
+    color: rgb(90, 101, 90);
+}
+.p12settingBox {
+    /* width: 520px; */
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    color: #585757;
+    top: 0;
+    /* SH */
+    z-index: 999;
+    left: 0;
+    padding: 20px 50px 20px 30px;
+    -moz-transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    transition: all 500ms linear 0s;
+
+    -moz-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: auto;
+    /* width: fit-content; */
+    overflow-y: scroll;
+    font-size: 16px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+}
+
+
+.p12settingBox button {
+    /* width: 13vw; */
+    font-size: calc(10px + 0.6vw);
+    background-color: #6a6a6a;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 7vh;
+    /* margin: 15px; */
+    line-height: 7vh;
+    transition: all 0 linear 500ms;
+}
+.p12settingBox button:hover{
+    background-color: #e2ffd3;
+    color: rgb(0, 65, 18);
+
+}
+.p12settingBox button:focus{
+    background-color: #2e551d;
+    color: rgb(180, 255, 201);
+
+}
+
+.p12notice {
+    font-size: 17;
+    color: red;
+}
+
+.p12switchOn {
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #3d3d3d;
+    color: aliceblue;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* left: 85%; */
+    line-height: 30px;
+    cursor: pointer;
+    top: -30px;
+}
+
+.p12switchOn:hover {
+    outline: 2px solid blue;
+    border-radius: 30px;
+    /* outline-offset: 1px; */
+
+}
+
+.p12switchOn p {
+    width: 100%;
+    /* padding-right: 10px; */
+    text-align: center;
+
+}
+
+.p12s-on {
+    color: white;
+    /* margin-left: 100px; */
+}
+
+.p12s-off {
+    color: #b8b8b8;
+    /* margin-left: 20px; */
+}
+
+.p12switch-button {
+    width: 42px;
+    height: 22px;
+    border-radius: 25px;
+    position: absolute;
+    /* margin-top: px; */
+    background-color: #666666;
+    z-index: 1;
+    right: 5px;
+    transition: all 200ms ease-out 0s;
+}
+
+.switch-button-position {
+    right: 42px;
+}
+
+.switchBlueOutlien {
+    outline: 2px solid blue;
+    border-radius: 30px;
+    outline-offset: 3px;
+}
+
+.p12CloseInSettingBox {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 98%;
+    top: -10%;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    filter: drop-shadow(1px 1px 1px black);
+    transition: all 200ms ease-in 0s;
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
+
+.p12CloseInSettingBox:hover {
+    filter: drop-shadow(0px 0px 1px red);
+}
+
+/* js classes */
+.localToZiro {
+    transform: scaleY(0);
+
+}
+
+.settingToZiro {
+    -moz-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.toZiro {
+    transform-origin: top;
+    transition: all 1000ms ease 20ms;
+}
+
+.displayHide {
+    display: none;
+}
+
+.displayFlexCC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width:578px) {
+    .iconBoxBg {
+        display: none;
+    }
+
+    .img2 {
+        width: 15%;
+    }
+
+    .displayInSM {
+        display: none;
+    }
+
+    .p12settingBox {
+        width: 90%;
+    }
+
+    .p12switchOn {
+        left: 80%;
+    }
+
+    .p12settingBox button {
+        width: 120px;
+        height: auto;
+        line-height: 20px;
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width:992px) {
+    .iconBoxBg {
+        background-color: #ececec;
+    }
+
+    .p12settingBox {
+        width: 540px;
+    }
+
+    .p12switchOn {
+        left: 85%;
+    }
+
+    .p12settingBox button {
+        width: 160px;
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width:578px) and (max-width:992px) {
+    .iconBoxBg {
+        display: none;
+    }
+
+    .img2 {
+        width: 15%;
+    }
+
+    .displayInSM {
+        display: none;
+    }
+
+    .p12settingBox {
+        width: 540px;
+    }
+
+    .p12switchOn {
+        left: 85%;
+    }
+
+    .p12settingBox button {
+        width: 160px;
+        font-size: 16px;
+    }
+}

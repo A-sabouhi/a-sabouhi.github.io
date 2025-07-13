@@ -1,0 +1,247 @@
+.p1Local {
+    height: 50px;
+    background-color: rgba(137, 43, 226, 0.412);
+}
+
+/* ''''''''''''''''' main*/
+.p1main {
+    background-image: linear-gradient(180deg, silver, rgba(205, 205, 205, 0.497));
+    color: rgb(33, 33, 33);
+    padding-left: 0;
+    padding-right: 0;
+    /* height: 80px;
+    display: flex;
+    align-items: center; */
+    position: relative;
+    z-index: 500;
+    top: 0;
+    transition: all 2s ease 0s;
+}
+
+.p1localBG {
+    height: 80px;
+    transition: all 750ms linear 0s;
+
+}
+
+.p1closeCross {
+    position: absolute;
+    height: 20px;
+    /* top: 30px;
+    right: 55px; */
+    cursor: pointer;
+    /* text-shadow: 0 0 10px black; */
+}
+
+.p1closeCross span {
+    height: 100%;
+    line-height: 20px;
+    font-size: 20px;
+
+}
+
+/* .p1container {
+    display: flex;
+    align-items: center;
+
+} */
+
+.p1Container p {
+    /* height: 100%; */
+    /* line-height: 80px; */
+    /* padding-left: 50px; */
+    font-size: 14px;
+    color: #474747;
+    /* margin-bottom: 0; */
+}
+
+/* 
+.p1Button {
+    position: absolute;
+    width: 220px;
+    height: 44px;
+    line-height: 44px;
+    right: 100px;
+    top: 18px;
+    border-radius: 4px;
+    background-color: #808080;
+    color: whitesmoke;
+    box-shadow: inset 0 0 10px white;
+    transition: all 200ms ease 0s;
+} */
+
+.p1Button a {
+    width: 100%;
+    height: 100%;
+    line-height: 46px;
+    padding-left: 21px;
+    padding-right: 21px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px -1px 3px black;
+    border-radius: 10px;
+    /* background-color: ; */
+}
+
+
+.p1Button:hover,
+.p1Button a:hover {
+    color: rgb(45, 45, 45);
+    background-color: whitesmoke;
+    text-shadow: 1px -1px 5px rgba(0, 128, 0, 0.425);
+
+}
+
+/* p1 js */
+.p1Close {
+    /* filter: opacity(0); */
+    transform: translateY(-100%);
+}
+
+.p1CloseBG {
+    transform: translateY(-100%);
+    /* height: 0; */
+}
+
+.p1moveup {
+    display: none;
+}
+
+.p2MarginUp {
+    margin-top: 60px;
+}
+
+@keyframes p2moveUp {
+    from {
+        margin-top: 50px;
+    }
+
+    to {
+        margin-top: 0px;
+    }
+}
+
+.p2MoveUp {
+    animation: p2moveUp 800ms ease 0s;
+    animation-fill-mode: forwards;
+}
+
+@media all and (max-width:1199px) {
+    .p1localBG {
+        /* height: 127px; */
+        transition: height 750ms linear 0s;
+    }
+    .p1main{display: none;}
+    
+
+    .p1CloseBG {
+        height: 0;
+    }
+
+    .p1main {
+        height: 127px;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p1container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p1textContainer {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5px;
+
+    }
+
+    .p1BContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .p1Container p {
+        text-align: center;
+        line-height: 20px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .p1Button {
+        display: block;
+        width: 220px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 4px;
+        margin-top: 5px;
+        background-color: #808080;
+        color: whitesmoke;
+        /* box-shadow: inset 0 0 10px white; */
+        transition: all 200ms ease 0s;
+    }
+
+    .p1Container p {
+        height: 20px;
+        /* padding-left: 50px; */
+    }
+
+    .p1closeCross {
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media all and (min-width:1199.5px) {
+    .p1container {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+
+    .p1container {
+        display: flex;
+        align-items: center;
+    }
+
+    .p1Container p {
+        line-height: 80px;
+        margin-bottom: 0;
+    }
+
+    .p1Button {
+        position: absolute;
+        width: 220px;
+        height: 44px;
+        line-height: 44px;
+        right: 100px;
+        top: 18px;
+        border-radius: 4px;
+        background-color: #808080;
+        color: whitesmoke;
+        /* box-shadow: inset 0 0 10px white; */
+        transition: all 200ms ease 0s;
+    }
+
+    .p1Container p {
+        height: 100%;
+        padding-left: 50px;
+    }
+
+    .p1closeCross {
+        top: 30px;
+        right: 55px;
+    }
+
+}

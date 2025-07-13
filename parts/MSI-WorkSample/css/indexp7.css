@@ -1,0 +1,389 @@
+
+@media all and (min-width:1199px) {
+    .part7 {
+        padding: 40px 30px 30px 44px;
+        /* height: 115vh; */
+        background-color: #fafafa;
+        /* margin-bottom: 10px; */
+    }
+
+    .part7 a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: rgb(76, 75, 75);
+    }
+
+    .part7 img {
+        width: 100%;
+        transition: all 400ms ease 0s;
+    }
+
+    .part7 a:hover img {
+        transform: scale(1.05);
+    }
+
+    .p7textBox {
+        transition: all 700ms ease 0s;
+    }
+
+    .part7 a:hover .p7textBox {
+        background-color: #ececec4d;
+    }
+
+    .p7picBox {
+        overflow: hidden;
+        transition: all 400ms ease 0s;
+    }
+
+    .p7textBox h5 {
+        font-weight: bold;
+        color: white;
+        text-shadow: -1px 2px 3px black;
+        font-size: calc(12px + 0.4vw);
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        text-overflow: clip;
+        height: 40px;
+        line-height: 20px;
+        /* line-height: 10px; */
+    }
+
+    .p7textBox p {
+        padding-left: 10px;
+        color: #202020;
+        width: 100%;
+        height: 35px;
+        font-size: calc(7px + 0.5vw);
+        line-height: 15px;
+        padding-bottom: 20px;
+        margin-bottom: 4px;
+        text-overflow: clip;
+        overflow: hidden;
+
+    }
+
+    .p7flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .p7colPadding {
+        padding-left: 0;
+        padding-right: 4;
+    }
+
+
+    .p7rowMT {
+        align-self: flex-end;
+    }
+
+    .p7row1MB {
+        margin-bottom: 0px;
+    }
+
+    .part7MD,
+    .part7SM {
+        display: none;
+    }
+
+    .p7h2 {
+        margin-bottom: 50px;
+    }
+
+    .p7h2 h2 {
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        /* line-height: 30px; */
+        font-size: 36px;
+        color: rgb(34, 34, 34);
+
+    }
+
+}
+
+
+
+
+/* @media all and (min-width:767px) and (max-width:1199px) {
+    .p7mainBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(137, 43, 226, 0.353);  comment
+    }
+
+    .p7slider {
+        position: relative;
+        width: 700px;
+        height: 455px;
+        background-color: rgba(0, 255, 255, 0.58);
+    }
+
+    .p7slider img {
+        width: 100%;
+        position: absolute;
+    }
+
+    .p7textBox {
+        width: 700px;
+        height: 89px;
+        border: 2px dotted blue;        comment
+        border-block-width: 5px;
+        position: relative;
+    }
+
+    .p7tBMini {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .p7slider a,
+    .p7textBox a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .p7tBMini h5,
+    .p7tBMini p {
+        text-align: center;
+    }
+
+    .p7textBox h5 {
+        font-weight: bold;
+        font-size: calc(12px + 1.3vw);
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        text-overflow: clip;
+        height: 40px;
+        line-height: 20px;
+        line-height: 10px;      comment
+    }
+
+    .p7textBox p {
+        padding-left: 10px;
+        width: 100%;
+        height: 35px;
+        font-size: calc(9px + 0.9vw);
+        line-height: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 4px;
+        text-overflow: clip;
+        overflow: hidden;
+
+    }
+
+    .p7commandBox {
+        width: 100%;
+        height: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .p7miniCommand {
+        width: 15px;
+        height: 100%;
+        margin-right: 4px;
+        margin-left: 4px;
+        border: 1px solid rgb(46, 46, 46);
+        background-color: #696969;      comment
+        background-color: #c7c7c7;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    .p7miniCommandActive {
+        background-color: #696969;
+        width: 40px;
+    }
+
+    .part7SM {
+        display: none;
+    }
+
+    .p7h2 {
+        margin-bottom: 35px;
+    }
+
+    .p7h2 h2 {
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;      comment
+        font-size: calc(24px + 0.7vw);
+        color: rgb(34, 34, 34);
+
+    }
+} */
+
+
+
+/* @media all and (max-width:767px) {
+    .part7MD {
+        display: none;
+    }
+
+    .p7mainBox {
+        width: 100%;
+        height: 80vh;       comment
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: rgba(137, 43, 226, 0.353);  comment
+    }
+
+    .p7slider {
+        position: relative;
+        width: 100%;
+        height: 80%;  comment
+        width: 700px;   comment
+        height: 455px;      comment
+        background-color: rgba(0, 255, 255, 0.58);
+    }
+
+    .p7slider img {
+        width: 100%;
+        position: absolute;
+    }
+
+    .p7textBox {
+        width: 100%;
+        width: 700px;   comment
+        height: 89px;       comment
+        position: relative;
+    }
+
+    .p7tBMini {
+        position: absolute;
+        width: 100%;
+        height: 100%;  comment
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .p7slider a,
+    .p7textBox a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .p7tBMini h5,
+    .p7tBMini p {
+        text-align: center;
+    }
+
+    .p7commandBox {
+        width: 100%;
+        height: 8px;  comment
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .p7miniCommand {
+        width: 15px;
+        height: 8px;
+        margin-right: 4px;
+        margin-left: 4px;
+        border: 1px solid rgb(46, 46, 46);
+        background-color: #696969;  comment
+        background-color: #c7c7c7;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    .p7miniCommandActive {
+        background-color: #696969;
+        width: 40px;
+    }
+
+    .p7h2 {
+        margin-bottom: 35px;
+    }
+
+    .p7h2 h2 {
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        line-height: 30px; comment
+        font-size: calc(22px + 0.5vw);
+        color: rgb(34, 34, 34);
+
+    }
+} */
+
+@media all and (max-width:1198.5px) {
+    .p7headerBoxmini h2 {
+        font-weight: bolder;
+        font-size: calc(18px + 1vw);
+    }
+
+    .p7textBoxmini h5 {
+        font-size: calc(12px + 1.5vw);
+    }
+
+    .p7textBoxmini p {
+        font-size: calc(11px + 1vw);
+    }
+
+    .p7BTNcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p7miniBTNs_whInactive {
+        width: 15px;
+        background-color: rgb(194, 194, 194);
+    }
+
+    .p7miniBTNs {
+        height: 8px;
+        border-radius: 3px;
+        /* border: 1px solid black; */
+        margin: 4px;
+        transition: all 200ms ease 0s;
+        transform-origin: center;
+    }
+
+    .p7miniBTNs_whActive {
+        width: 40px;
+        background-color: #696969;
+    }
+
+    .p7picBoxmini {
+        transition: all 200ms ease 0s;
+    }
+
+    .p7textBoxmini a {
+        color: rgb(17, 17, 17);
+        text-decoration: none;
+    }
+}

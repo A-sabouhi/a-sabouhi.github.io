@@ -1,0 +1,112 @@
+
+/* .............. p12AnimatedB */
+.p12MainBox {
+    /* width: 200px;
+    height: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    position: fixed;
+    right: calc(2px + 1vw);
+    bottom: 100px;
+    z-index: 1000000;
+}
+
+.p12AnimatedB {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    /* animation-name: BalloonHover;
+    animation-duration: 2000ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
+    animation: BalloonHover 2000ms alternate infinite;
+    transition: all 100ms ease 0s;
+}
+
+.p12closeCross {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.p12closeCross:hover {
+    text-shadow: 0 0 2px rgb(249, 52, 246);
+}
+
+.p12img {
+    /* width: 150px;
+    height: 150px; */
+    border-radius: 50%;
+    /* border: 1px solid rgb(0, 30, 255); */
+    transition: all 200ms linear 0s;
+}
+
+.p12img img {
+    width: 100%;
+}
+
+.p12img:hover {
+    transform: scale(1.1);
+    filter: opacity(100%) brightness(1) sepia(0);
+}
+
+@keyframes BalloonHover {
+
+    from {
+        top: 10px
+    }
+
+    to {
+        top: 50px
+    }
+
+    /* 0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 20px;
+    } */
+}
+
+.p12CloseB {
+    display: none;
+}
+
+@media all and (min-width:767px) {
+    .p12MainBox {
+        width: 180px;
+        height: 180px;
+    }
+
+    .p12img {
+        width: 120px;
+        height: 120px;
+        filter: opacity(80%) brightness(1.50) sepia(60%) drop-shadow(2px 2px 10px #0bf3fb3d) drop-shadow(-2px -2px 10px #0bf3fb3d) drop-shadow(2px -2px 10px #0bf3fb3d) drop-shadow(-2px 2px 10px #0bf3fb3d);
+    }
+}
+
+@media all and (max-width:766.5px) {
+    .p12MainBox {
+        width: 100px;
+        height: 125px;
+    }
+
+    .p12img {
+        width: calc(60px + 5vw);
+        height: calc(60px + 5vw);
+    }
+}

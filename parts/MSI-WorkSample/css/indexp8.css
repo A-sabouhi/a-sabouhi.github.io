@@ -1,0 +1,53 @@
+
+.p8img {
+    width: 38%;
+}
+
+.p8img1 {
+    width: 32%;
+}
+
+.p8img2 {
+    width: 42%;
+}
+
+.p8imgpack,
+.p8imgpack a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: black;
+    mix-blend-mode: darken;
+}
+
+.p8imgpack:hover,
+.p8imgpack a:hover {
+    text-decoration: underline;
+}
+
+.p8span {
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p8halfBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.p8MargT{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media all and (max-width:576px) {
+    .p8imgpack a {
+        font-size: calc(12px + 0.8vw);
+    }
+}
