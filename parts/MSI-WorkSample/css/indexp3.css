@@ -10,17 +10,26 @@
 }
 
 
-.p3part3Link,
+.p3part3Link {
+    width: 100%;
+    text-decoration: none;
+    transition: all 250ms ease 0s;
+    
+}
 .p3part3LinkMini {
     width: 100%;
-    
     text-decoration: none;
     position: relative;
     transition: all 250ms ease 0s;
     
 }
 
-.p3part3Link img,
+.p3part3Link img{
+    display: inline-block;
+    width: 100%;
+    transition: all 300ms ease 0s;
+}
+
 .p3part3LinkMini img{
     display: inline-block;
     width: 100%;
