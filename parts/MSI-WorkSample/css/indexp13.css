@@ -32,3 +32,43 @@
     padding-left: 80px;
     user-select: none;
 }
+
+/*--------------------------------------- css for Part14 */
+.p14BacktoResume{
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    /* height: 100px; */
+    width: 120px;
+    border-radius: 8px;
+    border: 2px groove blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 20000;
+    background-image: url(../images/p4/textmask2.gif);
+    filter: opacity(50%);
+    transition: all 1s linear 0s;
+    box-shadow: -1px 1px 1px silver, 1px -1px 1px gold ;
+}
+.p14BacktoResume :hover{
+    filter: opacity(100%) brightness(120%);
+    color: rgb(0, 153, 255);
+    font-weight: bold;
+    text-shadow: -1px 1px 1px rgb(7, 6, 55), 1px -1px 1px rgb(7, 6, 55);
+    
+}
+
+.p14BacktoResume a{
+    /* width: 100%; */
+    align-items: center;
+    text-decoration: none;
+    color: pink;
+    /* filter: opacity(100%); */
+    text-align: center;
+}
+.p14BacktoResume a span{
+    width: 100%;
+    text-align: center;
+}
