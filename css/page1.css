@@ -1,4 +1,3 @@
-
 .m1mainBg {
     background-image: url(../images/mainPgBg.jpg);
     background-repeat: repeat-y;
@@ -7,14 +6,15 @@
     /* backdrop-filter: blur(10px); */
     /* -webkit-filter: blur(10px); */
 }
-.m1dommy{
+
+.m1dommy {
     height: 10vh;
 }
 
 .m1heading-style {
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* padding: 20px; */
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
     font-size: calc(40px + 1vw);
     color: white;
     /* text-shadow: 2px 2px 5px brown, -2px -2px 5px brown; */
@@ -30,11 +30,11 @@
 }
 
 .m1p-background {
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* padding: 20px; */
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
     font-size: calc(40px + 1vw);
-    color: rgb(9, 9, 9);
+    color: rgba(96, 6, 17, 0.467);
     text-shadow: 2px 2px 5px blue, -2px -2px 5px white;
     width: 100%;
     text-align: center;
@@ -51,19 +51,20 @@
     font-size: calc(1rem + 0.2vw);
     font-weight: bolder;
     /* text-decoration: dotted; */
-    padding: 20px;
-    margin-bottom: 50px;
+    /* padding: 20px;
+    margin-bottom: 50px; */
     text-shadow: 2px 2px 2px white, -2px -2px 5px white;
-    
+
 }
 
 
 
 .m1btn1 {
-    width: 200px;
+    /* width: 100%; */
     height: 100px;
     border-radius: 20px;
-    background: linear-gradient(45deg, #7289b3, pink);
+    /* background: linear-gradient(45deg, #7289b3, pink); */
+    background: linear-gradient(45deg, #424b6c, #590010);
     background-size: 200%;
     background-position: left;
     transition: background-position 0.5s ease, box-shadow 0.5s ease;
@@ -72,7 +73,7 @@
 .m1btn1:hover {
     background-position: right;
     box-shadow: 0 4px 16px 0 rgba(234, 234, 209, 0.4);
-    color: black;
+    color: rgb(237, 210, 137);
 }
 
 .m1displayn {
@@ -93,8 +94,10 @@
     background-color: rgba(192, 192, 192, 0.436);
 
 }
-.m1h2{
-    color: transparent;
-    text-shadow: -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black,;
-    
+
+.m1h2 {
+    font-size: calc(1rem + 0.6vw);
+    color: rgba(96, 6, 17, 0.709);
+    text-shadow: -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black, ;
+
 }
