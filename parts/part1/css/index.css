@@ -165,3 +165,28 @@
     font-size: 18px;
     font-family: sans-serif;
 }
+.painting_dummy{
+    height: 200px;
+    background: green;
+    mask-image: linear-gradient(transparent 20%, black 80%, transparent 100%);
+}
+@media (min-width:300px) and (max-width:375px){
+    .painting_1{
+        height: 70vh;
+        overflow: hidden;
+    } 
+    .painting-fade{
+        mask-image: linear-gradient(transparent 05%, black 20%,black 80%, transparent 85%);
+        
+    }
+} 
+@media (min-width:376px) and (max-width:992px){
+    .painting_1{
+        height: 100vh;
+        overflow: hidden;
+    } 
+    .painting-fade{
+        mask-image: linear-gradient(transparent 05%, black 20%,black 80%, transparent 95%);
+        
+    }
+} 
