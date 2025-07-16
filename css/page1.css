@@ -8,7 +8,7 @@
 }
 
 .m1dommy {
-    height: 10vh;
+    height: 15vh;
 }
 
 .m1heading-style {
@@ -92,6 +92,7 @@
 
 .m1bgBlur {
     background-color: rgba(192, 192, 192, 0.436);
+    mask-image: linear-gradient(transparent 0%, black 3%,black 97%, transparent 100% );
 
 }
 
@@ -100,4 +101,32 @@
     color: rgba(96, 6, 17, 0.709);
     text-shadow: -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black, ;
 
+}
+.m1_endnote{
+   
+    background-color: rgba(168, 128, 135, 0.707);
+    background-color: #85a3ba;
+    mask-image: linear-gradient(transparent 10%,black 50% 90%, transparent 100%);
+    position: fixed;
+    bottom: 0px;
+}
+.m1endtext{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* padding-top: ; */
+    /* padding-top: 5px; */
+}
+.m1endtext p{
+    width: 100%;
+    font-family: serif;
+    text-align: center;
+    padding-top: 10px;
+    font-size: calc(10px + 00.2vw);
+    line-height: calc(10px + 0.2vw);
+    color: rgb(21, 37, 49);
+    backdrop-filter: blur(10px);
+    /* mask-image: linear-gradient(black 50%, transparent 60%); */
 }
