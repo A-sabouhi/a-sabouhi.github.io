@@ -64,8 +64,10 @@
     height: 100px;
     border-radius: 20px;
     /* background: linear-gradient(45deg, #7289b3, pink); */
-    background: linear-gradient(45deg, #424b6c, #590010);
+    background: linear-gradient(45deg, #424b6cbe, #590010b9);
     background-size: 200%;
+    color: whitesmoke;
+    text-shadow: 1px -1px 3px rgba(245, 245, 245, 0.499);
     background-position: left;
     transition: background-position 0.5s ease, box-shadow 0.5s ease;
 }
@@ -127,6 +129,7 @@
     font-size: calc(10px + 00.2vw);
     line-height: calc(10px + 0.2vw);
     color: rgb(21, 37, 49);
+    /* text-shadow: 1px -1px 3px white; */
     backdrop-filter: blur(10px);
     /* mask-image: linear-gradient(black 50%, transparent 60%); */
 }
