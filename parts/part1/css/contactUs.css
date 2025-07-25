@@ -1,5 +1,7 @@
+@import url(roseNikNavigation.css);
+
 .bg1 {
-    background-image: url(../image/mainBg1.JPG);
+    background-image: url(../image/mixedColorsBg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

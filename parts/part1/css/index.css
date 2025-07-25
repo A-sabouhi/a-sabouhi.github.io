@@ -1,5 +1,7 @@
+@import url(roseNikNavigation.css);
+
 .bg1 {
-    background-image: url(../image/mainBg1.JPG);
+    background-image: url(../image/leaves_bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: repeat-y;
@@ -18,6 +20,7 @@
     height: 30vh;
     margin-top: 10vh;
     border-radius: 2rem;
+    filter: opacity(0.75);
 }
 
 .d2 {
@@ -136,35 +139,6 @@
 
 }
 
-.margin2left {
-    margin-top: 10px;
-}
-
-.navBarHome ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: start;
-    margin-left: 30px;
-}
-
-.navBarHome ul li {
-    list-style-type: none;
-    padding: 10px;
-    font-size: 18px;
-    line-height: 15px;
-    border-right: 3px solid rgb(255, 63, 95);
-}
-
-.borderNone {
-    border: 0 !important;
-}
-
-.navBarHome ul li a {
-    text-decoration: none;
-    color: rgb(43, 43, 43);
-    font-size: 18px;
-    font-family: sans-serif;
-}
 .painting_dummy{
     height: 200px;
     background: green;

@@ -1,0 +1,55 @@
+.navBarHome{
+    background:repeating-linear-gradient(45deg, rgba(79, 79, 79, 0.474) 5%,rgba(0, 128, 0, 0.497) 10%,rgba(0, 128, 0, 0.497) 15%, rgba(79, 79, 79, 0.474) 20%) ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 2px rgb(34, 34, 34);
+}
+.navBarHome ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: start;
+    margin-left: 30px;
+}
+
+.navBarHome ul li {
+    list-style-type: none;
+    padding: 15px;
+    font-weight: bold;
+    /* font-size: 18px; */
+    font-size: calc(1rem + 0.5vw);
+    line-height: 15px;
+    /* line-height: calc(2rem + 2vw); */
+    border-right: 3px solid rgb(255, 63, 95);
+}
+.navBarHome ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* font-size: 18px; */
+    font-size: calc(1rem + 0.5vw);
+    font-family: sans-serif;
+}
+.margin2left {
+    margin-top: 10px;
+}
+.borderNone {
+    border: 0 !important;
+}
+.navminiBgInside{
+    background:repeating-linear-gradient(135deg, rgba(79, 79, 79, 0.474) 5%,rgba(0, 128, 0, 0.497) 10%,rgba(0, 128, 0, 0.497) 15%, rgba(79, 79, 79, 0.474) 20%) ;
+}
+.navminiBgInside a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(54, 54, 54);
+}
+.navminiBgInside a:hover{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px green, 1px -1px 1px green, -1px -1px 1px green,-1px 1px 1px green;
+    padding: 10px;
+    text-decoration: dashed underline overline 1px;
+    text-decoration-color: cyan;
+}
+.navminiBg{
+    background:repeating-linear-gradient(45deg, rgba(79, 79, 79, 0.474) 5%,rgba(0, 128, 0, 0.497) 10%,rgba(0, 128, 0, 0.497) 15%, rgba(79, 79, 79, 0.474) 20%) ;
+}
