@@ -10,7 +10,13 @@
 }
 
 .dt1 {
-    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.dt1 img {
+    width: 25%;
 }
 
 .d1 {
@@ -18,13 +24,13 @@
     justify-content: center;
     align-items: center;
     height: 30vh;
-    margin-top: 10vh;
+    margin-top: 1vh;
     border-radius: 2rem;
     filter: opacity(0.75);
 }
 
 .d2 {
-    height: 10vh;
+    height: 5vh;
 }
 
 .mainbox {
@@ -120,8 +126,8 @@
     line-height: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px rgb(0, 0, 0);
+    color: rgb(253, 248, 209);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
     text-align: start;
 
 }
@@ -132,19 +138,20 @@
 }
 
 .subSize {
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 10px !important;
     font-style: oblique;
     font-weight: 400 !important;
 
 }
 
-.painting_dummy{
+.painting_dummy {
     height: 200px;
     background: rgba(1, 19, 1, 0.412);
     mask-image: linear-gradient(transparent 20%, black 80%, transparent 100%);
 }
-.photogaleryBorder{
+
+.photogaleryBorder {
     border: 70px solid transparent;
     border-image: url(../image/Frame1_borderImage.png) 15% round;
     box-sizing: content-box;
@@ -157,48 +164,92 @@
     /* mask-image: url(../image/borderImage1.png);
     mask-size: 100% 100%; */
 }
-.paintingShadow{
-    box-shadow: 10px 10px 20px rgba(30, 30, 29, 0.829),-10px -10px 20px rgba(44, 44, 43, 0.832);
+
+.paintingShadow {
+    box-shadow: 10px 10px 20px rgba(30, 30, 29, 0.829), -10px -10px 20px rgba(44, 44, 43, 0.832);
     transition: all 500ms linear 0s;
 }
-.lightsOn:hover .paintingShadow{
-    box-shadow: 10px 10px 20px rgba(244, 220, 102, 0.753),-10px -10px 20px rgba(244, 220, 102, 0.753);
+
+.lightsOn:hover .paintingShadow {
+    box-shadow: 10px 10px 20px rgba(244, 220, 102, 0.753), -10px -10px 20px rgba(244, 220, 102, 0.753);
 
 }
+
 /* .imgblur{
     filter: blur(10px);
 } */
-.txtCol{
+.txtCol {
     backdrop-filter: blur(10px);
-    color:black;
-    background: radial-gradient(rgba(255, 255, 255, 0.321) ,rgba(0, 0, 0, 0.294) );
+    color: rgb(244, 246, 191);
+    text-shadow: 1px -1px 3px black;
+    background: radial-gradient(rgba(255, 255, 255, 0.321), rgba(0, 0, 0, 0.294));
     border-radius: 20px;
     box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(255, 255, 255, 0.525);
 }
 
-.borderImageTest{
+.borderImageTest {
     box-sizing: content-box;
     border: 20px solid transparent;
     border-image: url(../image/borderImage1.png) 30% round;
     height: 50vh;
 }
-@media (min-width:300px) and (max-width:375px){
-    .painting_1{
+
+.img_text_sm_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.img_text_sm_btn button {
+    border-radius: 6px;
+}
+
+.img_text_sm_p {
+    line-height: 15px;
+    font-size: 14px;
+    padding: 30px 10px 10px 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.601);
+    border: 2px solid rgba(255, 255, 255, 0.705);
+    transition: transform 0.5s ease;
+    transform-origin: top;
+}
+
+.img_text_sm_pScale {
+    transform: scaleY(0);
+}
+
+.img_text_sm_pScale_dNone {
+    display: none;
+}
+
+
+
+@media (min-width:300px) and (max-width:375px) {
+    .painting_1 {
         height: 70vh;
         overflow: hidden;
-    } 
-    .painting-fade{
-        mask-image: linear-gradient(transparent 05%, black 20%,black 80%, transparent 85%);
-        
     }
-} 
-@media (min-width:376px) and (max-width:992px){
-    .painting_1{
+
+    .painting-fade {
+        mask-image: linear-gradient(transparent 05%, black 20%, black 80%, transparent 85%);
+
+    }
+}
+
+@media (min-width:376px) and (max-width:992px) {
+    .painting_1 {
         height: 100vh;
         overflow: hidden;
-    } 
-    .painting-fade{
-        mask-image: linear-gradient(transparent 05%, black 20%,black 80%, transparent 95%);
-        
     }
-} 
+
+    .painting-fade {
+        mask-image: linear-gradient(transparent 05%, black 20%, black 80%, transparent 95%);
+
+    }
+}
