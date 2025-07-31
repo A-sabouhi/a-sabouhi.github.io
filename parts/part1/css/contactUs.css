@@ -9,9 +9,9 @@
     background-color: rgb(253, 253, 253);
 }
 
-.dt1 {
+/* .dt1 {
     height: 10vh;
-}
+} */
 
 .d1 {
     display: flex;
@@ -103,8 +103,10 @@
 
 .contactText h3 {
     width: 100%;
-    line-height: 150px;
-    font-size: 30px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    line-height: calc(40px + 1vw);
+    font-size: calc(20px + 1vw);
     font-weight: bold;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 5px rgb(0, 0, 0), -1px -1px 5px black;
@@ -114,8 +116,8 @@
 
 .contactText p {
     width: 65%;
-    line-height: 50px;
-    font-size: 18px;
+    line-height: calc(10px +1vw);
+    font-size: calc(10px + 0.5vw);
     font-family: sans-serif;
     color: rgb(35, 35, 35);
     text-shadow: 1px 1px 5px rgb(255, 255, 255), -1px -1px 5px white;
