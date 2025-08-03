@@ -94,7 +94,7 @@
 
 .m1bgBlur {
     background-color: rgba(192, 192, 192, 0.436);
-    mask-image: linear-gradient(transparent 0%, black 3%,black 97%, transparent 100% );
+    mask-image: linear-gradient(transparent 0%, black 3%, black 97%, transparent 100%);
 
 }
 
@@ -104,24 +104,27 @@
     text-shadow: -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black, ;
 
 }
-.m1_endnote{
-   
+
+.m1_endnote {
+
     background-color: rgba(168, 128, 135, 0.707);
     background-color: #85a3ba;
-    mask-image: linear-gradient(transparent 10%,black 50% 90%, transparent 100%);
+    mask-image: linear-gradient(transparent 10%, black 50% 90%, transparent 100%);
     position: fixed;
     bottom: 0px;
 }
-.m1endtext{
+
+.m1endtext {
     /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     /* padding-top: ; */
     /* padding-top: 5px; */
 }
-.m1endtext p{
+
+.m1endtext p {
     width: 100%;
     font-family: serif;
     text-align: center;
@@ -133,3 +136,100 @@
     backdrop-filter: blur(10px);
     /* mask-image: linear-gradient(black 50%, transparent 60%); */
 }
+
+/* .healthCareBtn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+
+/* Modal related classes111111111111111111111111111111111111111111 */
+/* Basic styling for trigger */
+.clickable-div {
+    /* padding: 10px 20px; */
+    background: #007bff00;
+    color: rgba(255, 255, 255, 0.656);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Modal hidden by default */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.744);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show modal */
+.modal-overlay.active {
+    display: flex;
+}
+
+/* Modal box */
+.modal-box {
+    position: relative;
+    background: rgb(58, 58, 58);
+    color: rgb(31, 31, 31);
+    /* background-image: url(../images/ModalBoxBg.gif); */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.modalbg{
+    filter: blur(2px) opacity(0.8);
+    width: 100%;
+    height: 100%;
+    background: #00000087;
+    z-index:1001;
+}
+.closeModalClick {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+/* 111111111111111111111111111111111111111111111111111111111111111 */
+
+/* test bg filter only not the front content affected by the filter */
+
+.filtered-bg {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Background image with filter via ::before */
+.filtered-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('your-image.jpg');
+  /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('your-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(0.6); /* Example filters */
+  z-index: -1; /* Behind the content */
+}
+
+/* Optional: Make text stand out more */
+.filtered-bg h3,
+.filtered-bg p {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* --------------- */
+
+
+/* test bg-------------------------------------------------------- */

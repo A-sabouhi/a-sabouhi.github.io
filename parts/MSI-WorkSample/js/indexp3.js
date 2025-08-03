@@ -12,7 +12,8 @@
 
 const Next = document.querySelector(".p3next");
 const Back = document.querySelector(".p3back");
-
+const mobileSliderBox = document.getElementById("slider-mobile");
+const desktopSliderBox = document.getElementById("slider-desktop");
 
 
 function nextImage() {
@@ -31,7 +32,7 @@ function nextImage() {
         lastImage.setAttribute("src", firstImageSource);
         lastElement.appendChild(lastImage);
         // Next.before(lastElement);
-        document.querySelectorAll(".p3mainSliderBox")[1].appendChild(lastElement);
+        desktopSliderBox.appendChild(lastElement);
     }, 500)
 }
 function previousImage() {
@@ -47,7 +48,7 @@ function previousImage() {
     firstImage.setAttribute("src", lastImageSource);
     firstElement.appendChild(firstImage);
     firstElement.style.marginLeft = `-${screenWidth}px`;
-    document.querySelectorAll(".p3mainSliderBox")[1].prepend(firstElement);
+    desktopSliderBox.prepend(firstElement);
     setTimeout(function () {
         firstElement.style.marginLeft = 0;
     }, 1);
@@ -92,7 +93,7 @@ function nextImageMini() {
         lastImage.setAttribute("src", firstImageSource);
         lastElement.appendChild(lastImage);
         // Next.before(lastElement);
-        document.querySelectorAll(".p3mainSliderBox")[0].appendChild(lastElement);
+        mobileSliderBox.appendChild(lastElement);
     }, 500)
 }
 function previousImageMini() {
@@ -108,7 +109,7 @@ function previousImageMini() {
     firstImage.setAttribute("src", lastImageSource);
     firstElement.appendChild(firstImage);
     firstElement.style.marginLeft = `-${screenWidth}px`;
-    document.querySelectorAll(".p3mainSliderBox")[0].prepend(firstElement);
+    mobileSliderBox.prepend(firstElement);
     setTimeout(function () {
         firstElement.style.marginLeft = 0;
     }, 1);
